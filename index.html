@@ -5,19 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=hq, initial-scale=1.0" />
     <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="Main folder">
-      <nav class="navbar">
-        <h1 class="heading">Portfolio</h1>
-        <ul>
-          <li class="title">item1</li>
-          <li class="title">item1</li>
-          <li class="title">item1</li>
-          <li class="title">item1</li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="heading">Portfolio</div>
+      <ul>
+        <li class="title"><a href="#">item1</a></li>
+        <li class="title"><a href="#">item1</a></li>
+        <li class="title"><a href="#">item1</a></li>
+        <li class="title"><a href="#">item1</a></li>
+      </ul>
+      <div id="menucontainer" onclick="menufunc()">
+        <div class="menu1"></div>
+        <div class="menu1"></div>
+        <div class="menu1"></div>
+      </div>
+    </nav>
   </body>
+  <script>
+    function menufunc() {
+      let toggle = document.querySelector("menucontainer");
+      toggle.classList("menustyle");
+    }
+  </script>
 </html>
