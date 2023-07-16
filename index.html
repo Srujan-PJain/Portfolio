@@ -3,34 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=hq, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="portfolio.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
-    />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <nav class="navbar">
-      <div class="heading">Portfolio</div>
+      <div class="heading">SRUJAN</div>
       <ul>
-        <li class="title"><a href="#">item1</a></li>
-        <li class="title"><a href="#">item1</a></li>
-        <li class="title"><a href="#">item1</a></li>
-        <li class="title"><a href="#">item1</a></li>
+        <li class="title"><a href="#home">Home</a></li>
+        <li class="title"><a href="#about">About</a></li>
+        <li class="title"><a href="#education">Education</a></li>
+        <li class="title"><a href="#skills">Skills</a></li>
+        <li class="title"><a href="#contacts">Contacts</a></li>
       </ul>
-      <div id="menucontainer" onclick="menufunc()">
+      <div id="menucontainer">
         <div class="menu1"></div>
         <div class="menu1"></div>
         <div class="menu1"></div>
       </div>
     </nav>
+    <main>
+      <section id="home">
+        <div class="homeleft">
+          Hi, My name is <span class="purple">Srujan</span>
+          <div>and I am a passionate <br /><span id="element"></span></div>
+        </div>
+        <div class="homeright">
+          <div class="image">
+            <img
+              src="https://multiwebx.com/wp-content/uploads/2020/03/Hire-Dedicated-Developers.png"
+              alt="dev image"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-content">
+          <h1>About</h1>
+          <p>
+            I am a dedicated, hardworking individual currently a student
+            actively pursuing BE in CSE, who is looking for an opportunity to
+            gain knowledge through working in IT field. I want to be a fully
+            fledge full stack Developer. Really Interested in gain much more
+            knowledge in Web Development and also very curious about solving
+            logical problems.
+          </p>
+        </div>
+      </section>
+      <section id="education">
+        <table>
+          <tr cell spacing="2">
+            <th>Education</th>
+            <th>Percentage/CGPA</th>
+            <th>Passing Year</th>
+          </tr>
+          <tr>
+            <td>
+              SECONDARY SCHOOL <br />SDM English Medium high school, Ujire
+            </td>
+            <td>92.8%</td>
+            <td>2018</td>
+          </tr>
+          <tr>
+            <td>
+              PRE-UNIVERSITY <br />
+              SDM PU college, Ujire
+            </td>
+            <td>91.8%</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>
+              BACHELOR OF TECHNOLOGY <br />
+              SDM-Institute of technology, Ujire
+            </td>
+            <td>8.63(CGPA)</td>
+            <td>2020-2024</td>
+          </tr>
+        </table>
+      </section>
+      <section id="skills">
+        <div class="skill-tech">
+          <h1>Technical skills</h1>
+          <div>
+            <ul>
+              <li>C Programming</li>
+              <li>Python Programming</li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>MogoDB</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-soft">
+          <h1>Soft skills</h1>
+          <div>
+            <ul>
+              <li>Flexible</li>
+              <li>TeamWork</li>
+              <li>Active Learner</li>
+              <li>Learnig Enthusiast</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts"></section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Problem Solver", "Designer", "Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
-  <script>
-    function menufunc() {
-      let toggle = document.querySelector("menucontainer");
-      toggle.classList("menustyle");
-    }
-  </script>
 </html>
