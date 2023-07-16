@@ -140,10 +140,12 @@ th {
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
+}
+#skills h1 {
+  font-size: 1.6rem;
 }
 #skills ul {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .skill-soft,
 .skill-tech {
