@@ -36,6 +36,7 @@ body {
   width: 60%;
   margin: 2px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
 }
@@ -137,6 +138,7 @@ th {
   height: 100vh;
   display: flex;
   justify-content: center;
+  /* flex-wrap: wrap; */
 }
 #skills ul {
   font-size: 1.2rem;
@@ -147,7 +149,24 @@ th {
   margin-left: 15%;
   width: 80%;
 }
-.skill-soft h1,
-.skill-tech h1 {
-  margin-bottom: 10%;
+
+/* Contacts page */
+#contacts {
+  margin: 0 10%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.contact-content {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contact-content li {
+  margin-bottom: 15%;
+  font-size: 1.5rem;
+}
+.contact-content li a {
+  text-decoration: none;
 }
