@@ -11,6 +11,7 @@
 
 body {
   background-color: rgb(4, 3, 34);
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -21,6 +22,7 @@ body {
   display: flex;
   height: 12vh;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .heading {
@@ -74,14 +76,15 @@ section {
   margin-bottom: 10%;
   align-items: center;
   font-size: 5vh;
-  width: 50%;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+.homeright {
+  flex-grow: 1;
 }
 .purple,
 #element {
   color: rgb(191, 102, 243);
-}
-.homeright {
-  width: 50%;
 }
 .image {
   display: flex;
@@ -94,6 +97,7 @@ section {
 }
 
 #about {
+  flex-wrap: wrap;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -119,8 +123,10 @@ section {
 #education {
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-size: 10px;
 }
 table {
   border-collapse: collapse;
@@ -175,4 +181,24 @@ th {
 }
 .contact-content li a {
   text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .homeright {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+  .about-content {
+    overflow: scroll;
+  }
+  #menucontainer {
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 31%;
+  }
+  table {
+    font-size: small;
+  }
 }
