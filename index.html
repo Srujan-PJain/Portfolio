@@ -12,12 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="heading">SRUJAN</div>
-      <ul>
+    <nav class="navbar active">
+      <div class="heading">PORTFOLIO</div>
+
+      <ul class="navres">
         <li class="title"><a href="#home">Home</a></li>
         <li class="title"><a href="#about">About</a></li>
         <li class="title"><a href="#education">Education</a></li>
@@ -25,9 +27,8 @@
         <li class="title"><a href="#contacts">Contacts</a></li>
       </ul>
       <div id="menucontainer">
-        <div class="menu1"></div>
-        <div class="menu1"></div>
-        <div class="menu1"></div>
+        <ion-icon class="menu1" name="menu-outline"></ion-icon>
+        <ion-icon class="menu1" name="close-outline"></ion-icon>
       </div>
     </nav>
     <main>
@@ -159,11 +160,14 @@
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Problem Solver", "Designer", "Web Developer"],
-        typeSpeed: 50,
-      });
-    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>
